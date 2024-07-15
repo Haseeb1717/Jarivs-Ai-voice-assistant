@@ -1,0 +1,177 @@
+ body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    background-image: url('ai-technology-microchip-background-digital-transformation-concept.jpg');
+      background-color: black;
+      margin: 0;
+    }
+
+    .assistant {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .circle {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #00f7ff, #006f80);
+      position: relative;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+
+    .content {
+      background: rgba(0, 247, 255, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #00f7ff;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding:50px;
+      height: auto;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .wave {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200%;
+      height: 200%;
+      background: rgba(0, 247, 255, 0.2);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    .wave1 {
+      animation-delay: 0s;
+    }
+
+    .wave2 {
+      animation-delay: 0.5s;
+    }
+
+    .wave3 {
+      animation-delay: 1s;
+    }
+
+    .inner-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background-color: rgba(0, 247, 255, 0.5);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sound-wave {
+      width: 5px;
+      height: 40px;
+      background: #00f7ff;
+      margin: 0 2px;
+      animation: sound 0.6s infinite;
+    }
+
+    .sound-wave:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .sound-wave:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes sound {
+      0%, 100% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(2);
+      }
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #006f80;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(145deg, #6a5acd, #483d8b);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .button:active {
+      transform: translateY(4px);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .button-start {
+      background: linear-gradient(145deg, #32cd32, #228b22);
+    }
+
+    .button-stop {
+      background: linear-gradient(145deg, #ff4500, #c71585);
+    }
+  <
